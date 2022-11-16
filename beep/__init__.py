@@ -3,7 +3,6 @@ import time
 
 from mcdreforged.api.all import *
 
-
 def beep_small(server, info, name_list):
 	if not name_list:
 		return

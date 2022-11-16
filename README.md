@@ -10,7 +10,6 @@ Leave a space before and after name when you use a @, for example `@ judamar Hel
 Use two `@` for more powerful ping, for example `@@ all Hello!`
 
 ## Comandos:
-
 ``` 
 @ <name> -> 1 beep
 
