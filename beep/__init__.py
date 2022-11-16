@@ -9,7 +9,7 @@ def beep_small(server, info, name_list):
 		return
 	info.cancel_send_to_server()
 	for name in name_list:
-		server.execute('execute at {0} run playsound minecraft:entity.arrow.hit_player player {0}'.format(name))
+		server.execute('execute {0} ~ ~ ~ playsound minecraft:entity.arrow.hit_player master {0}'.format(name))
 
 
 def beep_big(server: ServerInterface, info: Info, name_list):
