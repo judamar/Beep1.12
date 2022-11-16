@@ -24,7 +24,7 @@ def beep_big(server: ServerInterface, info: Info, name_list):
 	def beeeeeeep():
 		for name in name_list:
 			with RTextMCDRTranslation.language_context(server.get_preference(name).language):
-				server.execute('title {} times 3 15 5'.format(name))
+				server.execute('title {} times 2 25 5'.format(name))
 				server.execute('title {} title {}'.format(name, title.to_json_str()))
 				server.execute('title {} subtitle {}'.format(name, subtitle.to_json_str()))
 		for i in range(2):
