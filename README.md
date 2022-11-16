@@ -15,4 +15,4 @@ Use two `@` for more powerful ping, for example `@@ all Hello!`
 
 @@ <name> -> mensaje en pantalla diciendo que mire el chat y 3 beeps
 
-@dc <name> -> mensaje en pantalla diciendo que revise discord y 3 beeps```
+@dc <name> -> mensaje en pantalla diciendo que revise discord y 3 beeps
