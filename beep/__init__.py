@@ -24,7 +24,7 @@ def beep_big(server: ServerInterface, info: Info, name_list):
 	def beeeeeeep():
 		for name in name_list:
 			with RTextMCDRTranslation.language_context(server.get_preference(name).language):
-				server.execute('title {} times 2 15 5'.format(name))
+				server.execute('title {} times 3 15 5'.format(name))
 				server.execute('title {} title {}'.format(name, title.to_json_str()))
 				server.execute('title {} subtitle {}'.format(name, subtitle.to_json_str()))
 		for i in range(2):
@@ -50,7 +50,7 @@ def on_user_info(server: ServerInterface, info: Info):
 	if info.content.find('@ ') > -1:
 		beep_small(server, info, find_name_list(info.content, '@'))
 		beep_big(server, info, find_name_list(info.content, '@@'))
-
+		
 
 def on_load(server: PluginServerInterface, old):
 	server.register_help_message('@ <someone>', server.get_self_metadata().description)
